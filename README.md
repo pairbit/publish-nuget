@@ -20,12 +20,12 @@ jobs:
       # - name: Setup dotnet
       #   uses: actions/setup-dotnet@v1
       #   with:
-      #     dotnet-version: 3.1.200
+      #     dotnet-version: 6.0.x
 
       # Publish
       - name: publish on version change
         id: publish_nuget
-        uses: pairbit/publish-nuget@v2
+        uses: pairbit/publish-nuget@v2.5.6
         with:
           # Filepath of the project to be packaged, relative to root of repository
           PROJECT_FILE_PATH: Core/Core.csproj
