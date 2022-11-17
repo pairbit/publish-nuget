@@ -37,7 +37,7 @@ inputs:
     INCLUDE_SYMBOLS:
         description: Flag to toggle pushing symbols along with nuget package to the server, disabled by default
         required: false
-        default: false
+        default: true
 
 outputs:
     VERSION:
