@@ -15,7 +15,7 @@ jobs:
     name: build, pack & publish
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # - name: Setup dotnet
       #   uses: actions/setup-dotnet@v1
@@ -25,7 +25,7 @@ jobs:
       # Publish
       - name: publish on version change
         id: publish_nuget
-        uses: pairbit/publish-nuget@v2.5.8
+        uses: pairbit/publish-nuget@v2.6.0
         with:
           # Filepath of the project to be packaged, relative to root of repository
           PROJECT_FILE_PATH: Core/Core.csproj
