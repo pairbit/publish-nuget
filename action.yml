@@ -22,7 +22,7 @@ inputs:
     TAG_COMMIT:
         description: Flag to toggle git tagging, enabled by default
         required: false
-        default: true
+        default: false
     TAG_FORMAT:
         description: Format of the git tag, [*] gets replaced with actual version
         required: false
