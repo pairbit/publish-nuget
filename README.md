@@ -69,7 +69,7 @@ PACKAGE_NAME | | NuGet package id, used for version detection & defaults to proj
 VERSION_FILE_PATH | `[PROJECT_FILE_PATH]` | Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
 VERSION_REGEX | `^\s*<Version>(.*)<\/Version>\s*$` | Regex pattern to extract version info in a capturing group
 VERSION_STATIC| | Useful with external providers like Nerdbank.GitVersioning, ignores VERSION_FILE_PATH & VERSION_REGEX
-TAG_COMMIT | `true` | Flag to toggle git tagging, enabled by default
+TAG_COMMIT | `false` | Flag to toggle git tagging, enabled by default
 TAG_FORMAT | `v*` | Format of the git tag, `[*]` gets replaced with actual version
 NUGET_KEY | | API key to authenticate with NuGet server
 NUGET_SOURCE | `https://api.nuget.org` | NuGet server uri hosting the packages, defaults to https://api.nuget.org
